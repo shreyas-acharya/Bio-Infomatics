@@ -56,8 +56,8 @@ def ResNet(args, pattern, count, kernel):
             x = identity_block(x, pattern[index], kernel)
 
     x = GlobalAveragePooling2D()(x)
-    x = Dense(args.classes, activation='softmax')(x)
-    return x
+    output = Dense(args.classes, activation='softmax')(x)
+    return Model(input_layer, output)
 
 def ResNet50(args):
     model = ResNet(
