@@ -1,11 +1,11 @@
 import argparse
-from VGG import VGG16
-from Load_Data import load_data
-from ResNet import ResNet50
-from MobileNet import MobileNet
-from AlexNet import AlexNet
+import Models
+from Models.VGG import VGG16
 from Utils import load_data
-from GoogleNet import GoogleNet
+from Models.ResNet import ResNet50
+from Models.MobileNet import MobileNet
+from Models.AlexNet import AlexNet
+from Models.Googlenet import GoogleNet
 def tuple_argument(data):
     return tuple(data)
 

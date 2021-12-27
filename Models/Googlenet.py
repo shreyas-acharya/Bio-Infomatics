@@ -1,7 +1,7 @@
 import tensorflow as tf
 from tensorflow.keras.layers import Dense, Conv2D, Input, ZeroPadding2D, MaxPooling2D, concatenate, AveragePooling2D, Flatten, Dropout
 from tensorflow.keras.models import Model
-from tensorflow.nn import local_response_normalization
+from tensorflow import local_response_normalization
 
 def inception_block(input_layer, filters):
     path1 = Conv2D(filters=filters[0], kernel_size=(1, 1), padding='same', activation='relu')(input_layer)
