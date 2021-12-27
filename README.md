@@ -1,1 +1,1 @@
-# Bio-Infomatics
+# Bio-Informatics
